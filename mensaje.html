@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- 
+
+
+SIIIII!!!!! 
+ESTA VIENDO BIEN!!! 
+En <KLICK> desarrollamos nuestro propio CODIGO!!!!
+INCREIBLE!!!
+
+En nuestra agencia siempre estamos necesitando curiosos tecnologicos como usted para desarrollar trabajos de calidad!!
+¿Por qué no nos envía su CV a trabajo@klickmd.com y conversamos?
+
+
+
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mensaje Enviado</title>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="img/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <header id="header">
+        <a href="https://klickmd.com/" class="logo"><span>&lt;</span>KLICK<span>&gt;</span></a>
+        <ul>
+            <li><a href="https://klickmd.com/" onclick="toogle()">Inicio</a></li>
+            <li><a href="https://klickmd.com/#nosotros" onclick="toogle()">Nosotros</a></li>
+            <li><a href="https://klickmd.com/#servicios" onclick="toogle()">Servicios</a></li>
+            <li><a href="https://klickmd.com/#metodo" onclick="toogle()">Metodo</a></li>
+            <li><a href="https://klickmd.com/#contacto" onclick="toogle()">Contacto</a></li>
+        </ul>
+        <div class="toogle" onclick="toogle()"></div>
+        </header>
+
+
+
+    <section class="mensaje-enviado">
+        <h2><span>&lt;</span>Mensaje Enviado<span>&gt;</span></h2>
+        <p class="texto">
+            Muchas gracias por escribirnos<br>
+            A la brevedad nuestro equipo se estará contactando con usted
+        </p>
+        <a href="https://klickmd.com/">Volver</a>
+    </section>
+
+
+
+    <!--Footer-->
+    <section class="footer">
+        <p class="texto">Sitio Web Diseñado & Desarrollado por <a href="https://klickmd.com/"><span class="log1">&lt;</span><span class="log2">KLICK</span><span class="log1">&gt;</span></a><br>Copyright © 2020 | Todos los derechos reservados a &lt;KLICK&gt;</p>
+        <!--
+        <ul>
+            <p class="texto">Siguenos en:</p>
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+        </ul>
+        -->
+    </section>
+
+
+    <!-- Javascript de menu pegajoso-->
+ <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+    function toogle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active")
+    }
+    </script>
+
+</body>
+</html>
